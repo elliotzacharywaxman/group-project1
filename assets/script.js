@@ -1,9 +1,12 @@
 // DEPENDENCIES-----------------
     // Display time element
-var timerEl = document.getElementById("displayTime")
-timerEl.textContent.moment()
-    // Display modal 
+function setTime(){
+    var today = moment().format('MMMM Do YYYY, h:mm:ss a');
+    $("#displayTime").text(today);
+}    
+// Display modal 
     // table row element
+setInterval(setTime, 1000);
 
 // STATE------------------------
 
