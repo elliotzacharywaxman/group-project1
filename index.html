@@ -39,7 +39,7 @@
     </header>
 
     <!-- Add a card component that explains how to use the modal -->
-    <container class="d-flex row p-2">
+    <!-- <container class="d-flex row p-2"> -->
       <div class="card col-md-3" style="width: 18rem">
         <img src="https://www.workforcehub.com/wp-content/uploads/2018/11/bigstock-Calendar-With-Schedule-Plans-p-254459887-1.jpg" class="card-img-top" alt="calendar" />
         <div class="card-body">
@@ -74,32 +74,71 @@
     <!-- date picker (use Jquery UI) -->
     <!-- store data -->
 
-    <div class="modal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Add
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Project Tracker</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
-    </container>
+    </div>
+  </div>
         <!--  Form   -->
             <!-- drop down -->
             <!-- name input -->
             <!-- hourly wage -->
             <!-- date picker (use Jquery UI) -->
             <!-- store data -->
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Example select</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Example multiple select</label>
+                  <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+
+
+
+
     
     <!-- Grid that displays the data from the user input -->
     <!-- displayed as a row -->
@@ -107,7 +146,7 @@
     <!-- display 8*hourlywage *number of days til due date -->
     <!-- jquery ui -->
     <!-- jquery  ---->
-    
+
    <script src="assets\script.js"></script>
    
   </body>
