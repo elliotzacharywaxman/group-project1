@@ -1,7 +1,7 @@
 // DEPENDENCIES-----------------
     // Display time element
 var timerEl = document.getElementById("displayTime")
-console.log(timerEl)
+timerEl.textContent.moment()
     // Display modal 
     // table row element
 
